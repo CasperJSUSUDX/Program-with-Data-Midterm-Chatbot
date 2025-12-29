@@ -1,0 +1,24 @@
+1. Intent
+    The goal behind a user's message.
+    Help the chatbot determine what the user want and respond appropriately
+
+2. User input
+    A sentense that user types.
+
+3. Response generation
+    Choosing the appropriate reply for a given intent.
+    Rule-based: Select answer from a predefined responses.
+    AI-generated: User language models to help generate a answer.
+
+4. Fallback intent
+    What is the reply when get a unknow input.
+
+5. Testing Data
+    Include intent, responses, entities and types.
+
+6. Reprocessing
+    Cleaning and preparing text before processing.
+
+7. entity
+
+8. Named entity recognition(NER)
