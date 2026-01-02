@@ -1,0 +1,74 @@
+{
+  "welcome_message" : "Library Chatbot: Hello! I am your personal library assistant. What can I help you.\nType 'bye' or 'quit' to exit.",
+  "exit_message": "Library Chatbot: Goodbye! Happy reading!",
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Good morning",
+        "Is anyone there?",
+        "Hey"
+      ],
+      "responses": [
+        "Hello! Welcome to the Library Service. How can I help you?",
+        "Hi there! ready to help you with your books.",
+        "Greetings! What can I do for you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Exit",
+        "Quit"
+      ],
+      "responses": [
+        "Goodbye! Happy reading!",
+        "See you later. Don't forget to return your books on time!",
+        "Bye! Have a great day."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "When are you open?",
+        "What are the opening hours?",
+        "Library hours",
+        "Time open"
+      ],
+      "responses": [
+        "We are open Mon-Fri from 8 AM to 9 PM, and weekends from 10 AM to 6 PM.",
+        "Our library hours are 08:00 - 21:00 on weekdays."
+      ]
+    },
+    {
+      "tag": "borrow_limit",
+      "patterns": [
+        "How many books can I borrow?",
+        "borrowing limit",
+        "max books"
+      ],
+      "responses": [
+        "Undergraduates can borrow up to 10 books. Postgraduates can borrow up to 20.",
+        "You can borrow a maximum of 10 items at a time."
+      ]
+    },
+    {
+      "tag": "provide_name",
+      "patterns": [
+        "My name is (.*)",
+        "I am (.*)",
+        "Call me (.*)"
+      ],
+      "responses": [
+        "Nice to meet you, {name}! How can I help you today?",
+        "Hello {name}, I have noted your name in our system."
+      ],
+      "context_set": ""
+    }
+  ]
+}
