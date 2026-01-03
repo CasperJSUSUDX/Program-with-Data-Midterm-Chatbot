@@ -1,5 +1,5 @@
 {
-  "welcome_message" : "Library Chatbot: Hello! I am your personal library assistant. What can I help you.\nType 'bye' or 'quit' to exit.",
+  "welcome_message" : "Library Chatbot: Hello! I am your personal library assistant. What can I help you.\nType 'bye', 'quit' or 'exit' to exit.",
   "exit_message": "Library Chatbot: Goodbye! Happy reading!",
   "intents": [
     {
@@ -45,6 +45,42 @@
         "Our library hours are 08:00 - 21:00 on weekdays."
       ]
     },
+	{
+      "tag": "check_availability",
+      "patterns": [
+        "Do you have (.*)",
+        "Is (.*) available",
+        "Can I borrow (.*)",
+        "Check stock for (.*)"
+      ],
+      "responses": [
+        "Let me check the availability for '{book_title}'...",
+        "Checking our catalog for '{book_title}'."
+      ]
+    },
+    {
+      "tag": "query_author",
+      "patterns": [
+        "Who wrote (.*)",
+        "Author of (.*)",
+        "Who is the author of (.*)"
+      ],
+      "responses": [
+        "Let me look up the author for '{book_title}'..."
+      ]
+    },
+    {
+      "tag": "list_books",
+      "patterns": [
+        "What books do you have?",
+        "Show me the catalog",
+        "List all books",
+        "book list"
+      ],
+      "responses": [
+        "Here are some books currently in our catalog: "
+      ]
+    },
     {
       "tag": "borrow_limit",
       "patterns": [
@@ -57,6 +93,31 @@
         "You can borrow a maximum of 10 items at a time."
       ]
     },
+	{
+	  "tag": "borrow_book",
+	  "patterns": [
+		"I want to borrow (.*)",
+		"Can I borrow (.*)",
+		"Borrow (.*)",
+		"I need to check out (.*)",
+        "Check out (.*)"
+      ],
+      "responses": [
+        "Processing your request to borrow '{book_title}'..."
+      ]
+	},
+	{
+	  "tag": "return_book",
+	  "patterns": [
+        "I want to return (.*)",
+        "Return (.*)",
+        "I am returning (.*)",
+        "Give back (.*)"
+	  ],
+      "responses": [
+		"Processing your return for '{book_title}'..."
+	  ]
+	},
     {
       "tag": "provide_name",
       "patterns": [
@@ -67,8 +128,7 @@
       "responses": [
         "Nice to meet you, {name}! How can I help you today?",
         "Hello {name}, I have noted your name in our system."
-      ],
-      "context_set": ""
+      ]
     }
   ]
 }
