@@ -32,6 +32,21 @@
         "Bye! Have a great day."
       ]
     },
+	{
+      "tag": "help",
+      "patterns": [
+        "What can you do",
+        "What can you help me with",
+        "Help",
+        "What are your features",
+        "How do I use this",
+        "Services"
+      ],
+      "responses": [
+        "I can help you with several library tasks:\n1. Check opening hours\n2. List all books\n3. Check if a book is available\n4. Borrow or Return books\n5. Tell you about borrowing limits.",
+        "I am your Library Assistant. You can ask me to 'Show me the catalog', 'Borrow [Book Name]', 'Check stock for [Book Name]', or ask about our 'Opening hours'."
+      ]
+    },
     {
       "tag": "hours",
       "patterns": [
