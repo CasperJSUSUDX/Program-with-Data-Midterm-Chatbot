@@ -99,7 +99,7 @@
     {
       "tag": "borrow_limit",
       "patterns": [
-        "How many books can I borrow?",
+        "How many books can I borrow",
         "borrowing limit",
         "max books"
       ],
